@@ -23,8 +23,7 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 9
+        # pnpm 版本自动读取 package.json 的 packageManager 字段，无需手动指定
 
       - name: Setup Node
         uses: actions/setup-node@v4
